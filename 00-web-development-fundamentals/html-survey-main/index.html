@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey for students</title>
+    <link rel="stylesheet" href="./layout.css">
+</head>
+<body>
+    <h1>Student's survey</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Add user</legend>
+            <div class="form-content">
+                <div class="container__first-name">
+                    <label for="firstName">First name: </label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+
+                <div class="container__last-name">
+                    <label for="lastName">Last name: </label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+
+                <div class="container__email">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-line">
+                    <div class="container__status">
+                        <label for="status">Status </label>
+                        <select name="status" id="status">
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                    </div>
+                    <div class="container__date">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" >
+                    </div>
+                </div>
+
+                <div class="container__fav-language">
+                    <p>Choose your favorite programming language.</p>
+                    <div>
+                        <input type="radio" name="language" id="html" value="html">
+                        <label for="html">HTML</label>
+                        <input type="radio" name="language" id="css" value="css">
+                        <label for="css">CSS</label>
+                        <input type="radio" name="language" id="javascript" value="javascript">
+                        <label for="javascript">JS</label>
+                    </div>
+                </div>
+
+                <div class="container__comments">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments" cols="28" rows="5"></textarea>
+                </div>
+
+                <div class="form-line">
+                    <div class="container__newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Sign up for newsletter</label>
+                    </div>
+                    <div class="container__terms">
+                        <input type="checkbox" id="terms" name="terms">
+                        <label for="terms">Agree to terms and conditions</label>
+                    </div>
+                </div>
+
+                <button class="button__submit-form">Submit</button>
+
+            </div>
+
+
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    min-height: 10vh;
+    padding: 0 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-nav{
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.top-nav a, .sign-in-link, .footer-nav__links{
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.footer-nav__links:hover, .sign-in-link:hover{
+    text-decoration: underline;
+}
+
+.footer-logo{
+    width: 15%;
+    min-width: 150px;
+}
+
+main{
+    width: 90%;
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em;
+    font-family: 'Merriweather', serif;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    width: 100%;
+    min-height: 10vh;
+    border-top: 2px solid black;
+}
+
+.main-article{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-img{
+    width: 100%;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.more-info-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(215, 216, 234);
+    padding: 1em;
+}
+
+.more-info-section > section{
+    width: 50%;
+}
+
+.more-info-title{
+    width: 100%;
+    font-size: 30px;
+}
+
+.article-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+ul li{
+    font-size: smaller;
+    margin-left: 1em;
+    padding: 1px 0;
+}
+
+.iterative-section, .recursive-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+
+.article-body{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em 0;
+    padding: 1em 0;
+}
+
+.article-body p{
+    text-align: justify;
+    font-size: 16px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+}
+
+i.social-f, i.social-t{
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+
+i.social-f{
+    background-image: url(https://www.clarin.com/static/CLAClarin/images/icons/fb-icon.svg);
+}
+
+i.social-t{
+    background-image: url(https://www.clarin.com/static/CLAClarin/images/icons/tw-icon.svg);
+}
+
+.share{
+    display: inline-block;
+    height: 25px;
+    width: 60px;
+}
